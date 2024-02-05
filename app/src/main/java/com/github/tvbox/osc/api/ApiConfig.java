@@ -130,9 +130,9 @@ public class ApiConfig {
 
     public void loadConfig(boolean useCache, LoadConfigCallback callback, Activity activity) {
         // Embedded Source : Update in Strings.xml if required
-        String apiUrl = Hawk.get(HawkConfig.API_URL, "https://gitee.com/bestpvp/tm/raw/master/source/stable/main.json");
+        String apiUrl = Hawk.get(HawkConfig.API_URL, "https://jihulab.com/mfkdy/cy/-/raw/main/Lite.json");
         if (apiUrl.isEmpty()) {
-            callback.error("关注[码上放生]公众号，获取最新的[时光机]数据源");
+            callback.error("关注[X开源精粹]公众号，获取最新的[XTV]数据源");
             return;
         }
         File cache = new File(App.getInstance().getFilesDir().getAbsolutePath() + "/" + MD5.encode(apiUrl));
@@ -190,7 +190,7 @@ public class ApiConfig {
                             callback.success();
                         } catch (Throwable th) {
                             th.printStackTrace();
-                            callback.error("解析失败\n关注[码上放生]公众号");
+                            callback.error("解析失败\n关注[X开源精粹]公众号");
                         }
                     }
 
