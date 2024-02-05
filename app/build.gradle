@@ -10,7 +10,7 @@ android {
     compileSdk 33
 
     defaultConfig {
-        applicationId 'com.github.tvbox.wolong'
+        applicationId 'com.github.tvbox.xtv'
         minSdkVersion 21
         targetSdkVersion 29
         versionCode 1
